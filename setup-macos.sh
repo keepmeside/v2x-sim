@@ -34,7 +34,7 @@ clone_tag https://github.com/Unipisa/Simu5G.git "$ROOT/src/simu5g" v1.3.0
 clone_tag https://github.com/sommer/veins.git "$ROOT/src/veins" veins-5.3.1
 
 cd "$ROOT/src/inet"; source setenv -q; make makefiles; make -j"$JOBS"
-cd "$ROOT/src/simu5g"; make makefiles; make -j"$JOBS"
+cd "$ROOT/src/simu5g"; source "$ROOT/src/inet/setenv" -q; make makefiles; make -j"$JOBS"
 cd "$ROOT/src/veins"; make makefiles; make -j"$JOBS"
 
 cat > "$ROOT/env.sh" <<EOF

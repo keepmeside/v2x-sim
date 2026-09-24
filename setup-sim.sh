@@ -38,6 +38,8 @@ clone_tag https://github.com/sommer/veins.git "$ROOT/src/veins" veins-5.3.1
 source "$OMNET/setenv"
 for project in inet simu5g veins; do
   cd "$ROOT/src/$project"
+  if [[ "$project" == "inet" ]]; then source setenv -q; fi
+  if [[ "$project" == "simu5g" ]]; then source "$ROOT/src/inet/setenv" -q; fi
   make makefiles
   make -j"$JOBS"
 done

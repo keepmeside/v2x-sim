@@ -7,7 +7,7 @@ git clone <repository-url> v2x-sim
 cd v2x-sim
 chmod +x setup-macos.sh
 ./setup-macos.sh
-source "$HOME/sim-stack/env.sh"
+source "$HOME/sim-stack/env.sh"  # optional; scenario/run.sh loads it automatically
 ```
 
 Sau khi cài xong, mở project bằng OMNeT++ IDE hoặc chạy `opp_run` từ thư mục mô phỏng. Các file SUMO trong `scenario/` là dữ liệu đầu vào độc lập với hệ điều hành.

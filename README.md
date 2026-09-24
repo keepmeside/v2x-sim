@@ -9,6 +9,8 @@ This workspace targets Ubuntu 22.04 with OMNeT++ 6.1.0, INET 4.5.4, Simu5G 1.3.0
 source "$HOME/sim-stack/env.sh"
 ```
 
+`setup-sim.sh` creates `$HOME/sim-stack` and writes `env.sh` after the dependencies finish building. Do not source `env.sh` before the setup script completes. `scenario/run.sh` can also load it automatically.
+
 The installer puts source trees and builds under `$HOME/sim-stack`. It is safe to rerun after an interrupted build.
 
 ## Scenario

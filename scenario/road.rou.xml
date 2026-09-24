@@ -1,0 +1,5 @@
+<routes>
+    <vType id="autonomous" accel="2.6" decel="4.5" sigma="0.2" length="4.8" minGap="2.5" maxSpeed="16.67" color="0,0,1"/>
+    <route id="main" edges="road"/>
+    <flow id="avFlow" type="autonomous" route="main" begin="0" end="60" period="5" departLane="best" departSpeed="max"/>
+</routes>

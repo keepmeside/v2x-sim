@@ -1,0 +1,15 @@
+# Local build products and downloaded dependencies
+sim-stack/
+*.o
+*.so
+*.d
+out/
+build/
+.DS_Store
+.idea/
+.vscode/
+
+# OMNeT++ generated files
+Makefile.inc
+configure.user
+*.bak
